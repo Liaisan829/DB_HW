@@ -4,6 +4,7 @@ where orderID = 4;
 with delete_order (id) as(
     select* from orders
     where id = 4
+--     delete with cascade
 )
 
 delete from orders
@@ -16,3 +17,6 @@ update shop set address = replace(address, 'Kazan, Zakieva, 1', 'Kazan, Zakieva,
 )
 
 select * from closed_shop;
+
+
+
