@@ -3,6 +3,6 @@ with recursive l(good) as (
 
     union all
     select goodid from orders
-                           inner join l on l.good = goodid
+    inner join l on l.good = goodid
 
 ) select * from l;
